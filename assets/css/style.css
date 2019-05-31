@@ -3,10 +3,9 @@ body {
     background: #ffc1cc;
     padding: 300px;
     color: rgb(102, 36, 156);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Libre Baskerville', serif;
-    /* font-family: 'Montserrat', sans-serif;
-    font-family: 'Inconsolata', monospace; */
+    margin: auto;
 }
 
 .hangman{
