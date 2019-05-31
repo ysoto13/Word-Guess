@@ -1,5 +1,6 @@
+var word = [" avocado", " cake", " coconut", " cookies", " gummies", " macaroon", " mango", " watermelon"];
+
 var victory = 0;
-var word = 0;
 var remaining = 10;
 var guessed = [];
 
@@ -8,12 +9,11 @@ var userGuess = '';
 
 function userSelect() {
     userGuess =
-        userPicks[(Math.random() * userPicks.length)]
+        word[(Math.random() * word.length)]
 }
 
 function updatedScores() {
     document.querySelector("#victory").innerHTML = victory;
-    document.querySelector("#word").innerHTML = word;
     document.querySelector("#remaining").innerHTML = remaining;
     document.querySelector("#guessed").innerHTML = guessed;
 
@@ -27,4 +27,20 @@ function resetScores() {
 
 userSelect();
 
-console.log(userGuess);
+document.onkeyup = function(event) {
+    remaining--;
+
+    var guessingWord = event.key.toLowerCase();
+    guessed.push(guessingWord);
+
+    updatedScores();
+
+    if ((guesssed === "avocado") || (guesssed === "cake") || (guesssed === "coconut") || (guesssed === "cookies") || (guesssed === "gummies") || (guesssed === "macaroon") || (guesssed === "mango") || (guesssed === "atermelon"))
+     {
+        victory++
+        updatedScores()
+        resetScores()
+        userSelect()
+    }
+
+}
