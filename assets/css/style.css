@@ -3,10 +3,18 @@ body {
     background: #ffc1cc;
     padding: 300px;
     color: rgb(102, 36, 156);
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
     /* font-family: 'Montserrat', sans-serif;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Libre Baskerville', serif; */
+    font-family: 'Inconsolata', monospace; */
 }
 
-font-family: 'Inconsolata', monospace;
+.hangman{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+.edition{
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+}
