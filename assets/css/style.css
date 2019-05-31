@@ -4,5 +4,9 @@ body {
     padding: 300px;
     color: rgb(102, 36, 156);
     font-size: 25px;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Libre Baskerville', serif; */
 }
 
+font-family: 'Inconsolata', monospace;
